@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Personalización - Tu Empresa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .example {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #2563eb;
+        }
+        .code {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+        }
+        .highlight {
+            background: #fef3c7;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 Guía de Personalización - Ejemplos Prácticos</h1>
+    
+    <p>Aquí tienes ejemplos de cómo personalizar tu página web con información real:</p>
+
+    <div class="example">
+        <h2>1. Cambiar el Nombre de la Empresa</h2>
+        <p><strong>Buscar en index.html:</strong></p>
+        <div class="code">
+&lt;title&gt;Tu Empresa - Soluciones Industriales&lt;/title&gt;
+&lt;h2&gt;TuEmpresa&lt;/h2&gt;
+&lt;p&gt;info@tuempresa.com&lt;/p&gt;
+        </div>
+        
+        <p><strong>Cambiar por:</strong></p>
+        <div class="code">
+&lt;title&gt;Industrias García - Soluciones Industriales&lt;/title&gt;
+&lt;h2&gt;Industrias García&lt;/h2&gt;
+&lt;p&gt;contacto@industriasgarcia.com&lt;/p&gt;
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>2. Personalizar Servicios</h2>
+        <p><strong>Ejemplo para una empresa de metalurgia:</strong></p>
+        <div class="code">
+&lt;div class="service-card"&gt;
+    &lt;div class="service-icon"&gt;
+        &lt;i class="fas fa-industry"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h3&gt;Fundición de Metales&lt;/h3&gt;
+    &lt;p&gt;Especialistas en fundición de hierro, acero y aluminio para piezas industriales de alta calidad.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="service-card"&gt;
+    &lt;div class="service-icon"&gt;
+        &lt;i class="fas fa-cogs"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h3&gt;Mecanizado CNC&lt;/h3&gt;
+    &lt;p&gt;Mecanizado de precisión con tecnología CNC para piezas complejas y prototipos.&lt;/p&gt;
+&lt;/div&gt;
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>3. Personalizar Productos</h2>
+        <p><strong>Ejemplo para una empresa de maquinaria:</strong></p>
+        <div class="code">
+&lt;div class="product-card"&gt;
+    &lt;div class="product-image"&gt;
+        &lt;i class="fas fa-industry"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h3&gt;Prensas Hidráulicas&lt;/h3&gt;
+    &lt;p&gt;Prensas hidráulicas de 50 a 500 toneladas para conformado de metales y plásticos.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="product-card"&gt;
+    &lt;div class="product-image"&gt;
+        &lt;i class="fas fa-conveyor-belt"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h3&gt;Líneas de Ensamblaje&lt;/h3&gt;
+    &lt;p&gt;Líneas automatizadas de ensamblaje para producción en serie con control de calidad integrado.&lt;/p&gt;
+&lt;/div&gt;
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>4. Personalizar Información de Contacto</h2>
+        <div class="code">
+&lt;div class="contact-item"&gt;
+    &lt;i class="fas fa-map-marker-alt"&gt;&lt;/i&gt;
+    &lt;div&gt;
+        &lt;h4&gt;Dirección&lt;/h4&gt;
+        &lt;p&gt;Av. Industrial Norte 456, Parque Industrial&lt;br&gt;Monterrey, Nuevo León, México&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="contact-item"&gt;
+    &lt;i class="fas fa-phone"&gt;&lt;/i&gt;
+    &lt;div&gt;
+        &lt;h4&gt;Teléfono&lt;/h4&gt;
+        &lt;p&gt;+52 (81) 1234-5678&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="contact-item"&gt;
+    &lt;i class="fas fa-envelope"&gt;&lt;/i&gt;
+    &lt;div&gt;
+        &lt;h4&gt;Email&lt;/h4&gt;
+        &lt;p&gt;ventas@tuempresa.com&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>5. Personalizar Colores</h2>
+        <p><strong>En styles.css, cambiar los colores principales:</strong></p>
+        <div class="code">
+/* Para una empresa de construcción (colores tierra) */
+.nav-logo h2 { color: #8B4513; }
+.btn-primary { background: #8B4513; }
+.service-icon { background: linear-gradient(135deg, #8B4513, #A0522D); }
+
+/* Para una empresa tecnológica (colores azul/verde) */
+.nav-logo h2 { color: #00BFFF; }
+.btn-primary { background: #00BFFF; }
+.service-icon { background: linear-gradient(135deg, #00BFFF, #32CD32); }
+
+/* Para una empresa de energía (colores naranja) */
+.nav-logo h2 { color: #FF8C00; }
+.btn-primary { background: #FF8C00; }
+.service-icon { background: linear-gradient(135deg, #FF8C00, #FFA500); }
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>6. Agregar Imágenes Reales</h2>
+        <p><strong>Crear carpeta images/ y agregar imágenes:</strong></p>
+        <div class="code">
+&lt;!-- En lugar del placeholder --&gt;
+&lt;div class="hero-placeholder"&gt;
+    &lt;i class="fas fa-industry"&gt;&lt;/i&gt;
+&lt;/div&gt;
+
+&lt;!-- Usar imagen real --&gt;
+&lt;div class="hero-image"&gt;
+    &lt;img src="images/fabrica-principal.jpg" alt="Nuestra fábrica"&gt;
+&lt;/div&gt;
+        </div>
+        
+        <p><strong>Y agregar estos estilos en CSS:</strong></p>
+        <div class="code">
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>7. Personalizar SEO</h2>
+        <p><strong>Agregar en el &lt;head&gt; de index.html:</strong></p>
+        <div class="code">
+&lt;meta name="description" content="Industrias García - Líder en soluciones industriales y maquinaria pesada. Especialistas en fundición, mecanizado CNC y automatización industrial en Monterrey."&gt;
+&lt;meta name="keywords" content="industria, maquinaria, fundición, CNC, automatización, Monterrey, México"&gt;
+&lt;meta property="og:title" content="Industrias García - Soluciones Industriales"&gt;
+&lt;meta property="og:description" content="Especialistas en maquinaria industrial y automatización"&gt;
+&lt;meta property="og:image" content="https://tuempresa.com/images/logo.png"&gt;
+&lt;meta property="og:url" content="https://tuempresa.com"&gt;
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>8. Configurar Formulario de Contacto</h2>
+        <p><strong>Paso 1:</strong> Ir a <a href="https://formspree.io" target="_blank">formspree.io</a></p>
+        <p><strong>Paso 2:</strong> Crear cuenta y formulario</p>
+        <p><strong>Paso 3:</strong> Reemplazar en index.html:</p>
+        <div class="code">
+&lt;form action="https://formspree.io/f/xaybzwkd" method="POST"&gt;
+        </div>
+        <p><span class="highlight">Nota:</span> Reemplaza "xaybzwkd" con tu endpoint real de Formspree</p>
+    </div>
+
+    <h2>🎯 Consejos de Personalización</h2>
+    <ul>
+        <li><strong>Mantén consistencia:</strong> Usa los mismos colores y fuentes en toda la página</li>
+        <li><strong>Imágenes de calidad:</strong> Usa imágenes profesionales de tu empresa</li>
+        <li><strong>Contenido relevante:</strong> Describe servicios y productos específicos de tu negocio</li>
+        <li><strong>Información de contacto:</strong> Asegúrate de que sea fácil contactarte</li>
+        <li><strong>Testimonios:</strong> Agrega opiniones de clientes satisfechos</li>
+        <li><strong>Certificaciones:</strong> Muestra certificaciones y premios de tu empresa</li>
+    </ul>
+
+    <h2>📞 Próximos Pasos</h2>
+    <ol>
+        <li>Personaliza el contenido con información de tu empresa</li>
+        <li>Configura el formulario de contacto con Formspree</li>
+        <li>Agrega imágenes reales de tu empresa</li>
+        <li>Prueba la página en diferentes dispositivos</li>
+        <li>Sube al hosting de tu elección</li>
+        <li>Configura tu dominio personalizado</li>
+    </ol>
+
+    <p><strong>¡Tu página web estará lista para impresionar a tus clientes! 🚀</strong></p>
+</body>
+</html> 

@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Macroequipos Website – Estructura y Arquitectura
 
-## Getting Started
+## Resumen
+Este proyecto es una web profesional y escalable para **Macroequipos**, una empresa ecuatoriana especializada en soluciones de ingeniería y acero inoxidable para el sector agropecuario y alimentario.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Estructura de Carpetas y Archivos
+
+```
+src/
+  app/
+    layout.tsx                # Layout general (Navbar, Footer, estilos globales)
+    page.tsx                  # Página de Inicio
+    nosotros/
+      page.tsx                # Sección "Sobre Nosotros"
+    productos/
+      page.tsx                # Landing de productos
+      equipos-ordenio/
+        page.tsx              # Equipos de Ordeño
+      tanques-enfriamiento/
+        page.tsx              # Tanques de Enfriamiento
+      industria-agroalimentaria/
+        page.tsx              # Industria Agroalimentaria
+      menaje-inoxidable/
+        page.tsx              # Menaje Inoxidable
+    servicios/
+      page.tsx                # Servicios (Instalación, Mantenimiento, Repuestos)
+    casos-exito/
+      page.tsx                # Casos de Éxito
+    blog/
+      page.tsx                # Blog / Novedades
+    contacto/
+      page.tsx                # Contacto (formulario, datos, mapa)
+    components/
+      Navbar.tsx              # Barra de navegación
+      Footer.tsx              # Pie de página
+      Hero.tsx                # Sección principal de bienvenida
+      LineasNegocio.tsx       # Iconos y resumen de líneas de negocio
+      Estadisticas.tsx        # Estadísticas clave
+      CTA.tsx                 # Llamado a la acción
+      ...otros componentes reutilizables
+  public/
+    images/                   # Imágenes de productos, equipo, etc.
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Propósito de Cada Sección
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Inicio:**
+  - Hero banner (imagen, claim breve)
+  - Cuatro íconos de líneas de negocio
+  - Estadísticas clave
+  - CTA "Solicita una cotización"
 
-## Learn More
+- **Nosotros:**
+  - Historia, fotos de planta y equipo
+  - Certificaciones y alianzas
 
-To learn more about Next.js, take a look at the following resources:
+- **Productos:**
+  - Galería, ficha técnica, beneficios, aplicaciones, testimonios
+  - Subsecciones para cada línea de producto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Servicios:**
+  - Alcance de instalación y mantenimiento
+  - Planes de servicio preventivo
+  - Botón de agendar visita técnica
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Casos de Éxito:**
+  - Mini-historias, fotos antes/después, métricas de impacto
 
-## Deploy on Vercel
+- **Blog / Novedades:**
+  - Artículos, videos, webinars
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Contacto:**
+  - Formulario, datos de contacto, WhatsApp, mapa
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Lineamientos de Diseño
+- **Paleta:** Azul corporativo (#004A8F), gris acero (#BFC3C6), blanco
+- **Tipografía:** Inter o Poppins
+- **Estilo:** Fotografía de equipos, texturas metálicas, iconos limpios
+- **Voice & Tone:** Técnico, confiable, cercano
+
+---
+
+## SEO & Accesibilidad
+- Keywords: equipos de ordeño Ecuador, tanques de enfriamiento leche, menaje acero inoxidable
+- Meta titles <= 60 caracteres, meta descriptions <= 155
+- Etiquetas ALT descriptivas
+- Contraste AA y navegación por teclado
+
+---
+
+## Roadmap de Desarrollo
+1. Wireframes y moodboard
+2. Diseño UI en Figma
+3. Desarrollo Front-end (React/Next)
+4. Integración CMS / Formularios
+5. Pruebas QA & SEO
+6. Lanzamiento y monitoreo
+
+---
+
+> **Este README debe consultarse siempre para mantener la coherencia y escalabilidad del proyecto.**
