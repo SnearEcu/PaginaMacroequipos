@@ -163,21 +163,21 @@ export default function Consultoria() {
               Expertos en optimización industrial, automatización y mejora continua para maximizar tu competitividad
             </p>
             <div className="grid md:grid-cols-4 gap-4 text-center">
-              <div className="bg-white bg-opacity-20 rounded-lg p-4">
-                <div className="text-2xl font-bold">200+</div>
-                <div className="text-sm">Proyectos</div>
+              <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-white drop-shadow-lg">200+</div>
+                <div className="text-sm text-white drop-shadow-lg">Proyectos</div>
               </div>
-              <div className="bg-white bg-opacity-20 rounded-lg p-4">
-                <div className="text-2xl font-bold">15+</div>
-                <div className="text-sm">Especialistas</div>
+              <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-white drop-shadow-lg">15+</div>
+                <div className="text-sm text-white drop-shadow-lg">Especialistas</div>
               </div>
-              <div className="bg-white bg-opacity-20 rounded-lg p-4">
-                <div className="text-2xl font-bold">95%</div>
-                <div className="text-sm">Éxito</div>
+              <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-white drop-shadow-lg">95%</div>
+                <div className="text-sm text-white drop-shadow-lg">Éxito</div>
               </div>
-              <div className="bg-white bg-opacity-20 rounded-lg p-4">
-                <div className="text-2xl font-bold">$2M+</div>
-                <div className="text-sm">Ahorros Generados</div>
+              <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-white drop-shadow-lg">$2M+</div>
+                <div className="text-sm text-white drop-shadow-lg">Ahorros Generados</div>
               </div>
             </div>
           </motion.div>
@@ -188,8 +188,9 @@ export default function Consultoria() {
         {/* Áreas de Especialización */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
           className="mb-16"
         >
           <h2 className="text-3xl font-bold text-[#004A8F] mb-12 text-center">
@@ -201,8 +202,9 @@ export default function Consultoria() {
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                viewport={{ once: true }}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <div className="flex items-center mb-4">
@@ -245,8 +247,9 @@ export default function Consultoria() {
         {/* Metodología */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
           className="mb-16"
         >
           <h2 className="text-3xl font-bold text-[#004A8F] mb-12 text-center">
@@ -258,8 +261,9 @@ export default function Consultoria() {
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
+                viewport={{ once: true }}
                 className="bg-white rounded-xl p-6 shadow-lg text-center relative"
               >
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-[#004A8F] text-white rounded-full flex items-center justify-center text-sm font-bold">
@@ -291,8 +295,9 @@ export default function Consultoria() {
         {/* Equipo de Expertos */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
           className="mb-16"
         >
           <h2 className="text-3xl font-bold text-[#004A8F] mb-12 text-center">
@@ -304,8 +309,9 @@ export default function Consultoria() {
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
+                viewport={{ once: true }}
                 className="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-shadow"
               >
                 <div className="text-5xl mb-4">{experto.icono}</div>
@@ -338,8 +344,9 @@ export default function Consultoria() {
           {/* Casos de Éxito */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
+            viewport={{ once: true }}
             className="bg-white rounded-xl p-8 shadow-lg"
           >
             <h3 className="text-2xl font-bold text-[#004A8F] mb-6">Casos de Éxito Recientes</h3>
@@ -370,8 +377,9 @@ export default function Consultoria() {
           {/* CTA */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
+            viewport={{ once: true }}
             className="bg-gradient-to-br from-[#004A8F] to-[#0066CC] rounded-xl p-8 text-white"
           >
             <h3 className="text-2xl font-bold mb-4">¿Listo para optimizar tu operación?</h3>

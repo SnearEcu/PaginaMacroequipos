@@ -98,12 +98,13 @@ export default function Servicios() {
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-[#004A8F] to-[#0066CC] text-white py-20">
         <div className="container mx-auto px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-4xl mx-auto text-center"
-          >
+                  <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="max-w-4xl mx-auto text-center"
+        >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Servicios Integrales
             </h1>
@@ -111,21 +112,21 @@ export default function Servicios() {
               Soluciones completas para el sector agropecuario e industrial con tecnología de vanguardia
             </p>
                          <div className="grid md:grid-cols-4 gap-4 text-center">
-               <div className="bg-white bg-opacity-20 rounded-lg p-4">
-                 <CountUp target={4} className="text-2xl font-bold" />
-                 <div className="text-sm">Áreas de Servicio</div>
+               <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                 <CountUp target={4} className="text-2xl font-bold text-white drop-shadow-lg" />
+                 <div className="text-sm text-white drop-shadow-lg">Áreas de Servicio</div>
                </div>
-               <div className="bg-white bg-opacity-20 rounded-lg p-4">
-                 <CountUp target={500} suffix="+" className="text-2xl font-bold" />
-                 <div className="text-sm">Proyectos Exitosos</div>
+               <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                 <CountUp target={500} suffix="+" className="text-2xl font-bold text-white drop-shadow-lg" />
+                 <div className="text-sm text-white drop-shadow-lg">Proyectos Exitosos</div>
                </div>
-               <div className="bg-white bg-opacity-20 rounded-lg p-4">
-                 <div className="text-2xl font-bold">24/7</div>
-                 <div className="text-sm">Soporte Técnico</div>
+               <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                 <div className="text-2xl font-bold text-white drop-shadow-lg">24/7</div>
+                 <div className="text-sm text-white drop-shadow-lg">Soporte Técnico</div>
                </div>
-               <div className="bg-white bg-opacity-20 rounded-lg p-4">
-                 <CountUp target={15} suffix="+" className="text-2xl font-bold" />
-                 <div className="text-sm">Años de Experiencia</div>
+               <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                 <CountUp target={15} suffix="+" className="text-2xl font-bold text-white drop-shadow-lg" />
+                 <div className="text-sm text-white drop-shadow-lg">Años de Experiencia</div>
                </div>
              </div>
           </motion.div>
@@ -136,8 +137,9 @@ export default function Servicios() {
         {/* Nuestros Servicios */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
           className="mb-16"
         >
           <h2 className="text-3xl font-bold text-[#004A8F] mb-12 text-center">
@@ -149,8 +151,9 @@ export default function Servicios() {
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                viewport={{ once: true }}
                 className="group"
               >
                 <Link href={servicio.enlace}>
@@ -191,8 +194,9 @@ export default function Servicios() {
         {/* Por qué elegirnos */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
           className="mb-16"
         >
           <h2 className="text-3xl font-bold text-[#004A8F] mb-12 text-center">
@@ -204,8 +208,9 @@ export default function Servicios() {
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
+                viewport={{ once: true }}
                 className="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-shadow"
               >
                 <div className="text-4xl mb-4">{ventaja.icono}</div>
@@ -222,8 +227,9 @@ export default function Servicios() {
         {/* Proceso de Trabajo */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
           className="mb-16"
         >
           <h2 className="text-3xl font-bold text-[#004A8F] mb-12 text-center">
@@ -235,8 +241,9 @@ export default function Servicios() {
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
+                viewport={{ once: true }}
                 className="relative"
               >
                 <div className="bg-white rounded-xl p-6 shadow-lg text-center relative z-10 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
@@ -256,8 +263,9 @@ export default function Servicios() {
                   <div className="hidden lg:block absolute top-1/2 -right-4 z-20">
                     <motion.div
                       initial={{ opacity: 0, scale: 0 }}
-                      animate={{ opacity: 1, scale: 1 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.3, delay: 0.8 + index * 0.1 }}
+                      viewport={{ once: true }}
                       className="flex items-center"
                     >
                       {/* Línea de la flecha */}
@@ -273,8 +281,9 @@ export default function Servicios() {
                   <div className="lg:hidden flex justify-center mt-4 mb-4">
                     <motion.div
                       initial={{ opacity: 0, scale: 0 }}
-                      animate={{ opacity: 1, scale: 1 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.3, delay: 0.8 + index * 0.1 }}
+                      viewport={{ once: true }}
                       className="flex flex-col items-center"
                     >
                       {/* Línea vertical */}
@@ -292,8 +301,9 @@ export default function Servicios() {
         {/* CTA Final */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
+          viewport={{ once: true }}
           className="bg-gradient-to-r from-[#004A8F] to-[#0066CC] rounded-xl p-8 text-white text-center"
         >
           <h2 className="text-3xl font-bold mb-4">¿Listo para optimizar tu operación?</h2>
@@ -302,7 +312,7 @@ export default function Servicios() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contacto">
+            <Link href="/contactanos">
               <button className="bg-white text-[#004A8F] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                 Solicitar Cotización
               </button>

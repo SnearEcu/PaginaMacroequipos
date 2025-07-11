@@ -143,21 +143,21 @@ export default function Mantenimiento() {
               Servicios integrales de mantenimiento para maximizar la vida útil y rendimiento de tus equipos
             </p>
             <div className="grid md:grid-cols-4 gap-4 text-center">
-              <div className="bg-white bg-opacity-20 rounded-lg p-4">
-                <div className="text-2xl font-bold">24/7</div>
-                <div className="text-sm">Disponibilidad</div>
+              <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-white drop-shadow-lg">24/7</div>
+                <div className="text-sm text-white drop-shadow-lg">Disponibilidad</div>
               </div>
-              <div className="bg-white bg-opacity-20 rounded-lg p-4">
-                <div className="text-2xl font-bold">98%</div>
-                <div className="text-sm">Uptime Garantizado</div>
+              <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-white drop-shadow-lg">98%</div>
+                <div className="text-sm text-white drop-shadow-lg">Uptime Garantizado</div>
               </div>
-              <div className="bg-white bg-opacity-20 rounded-lg p-4">
-                <div className="text-2xl font-bold">2h</div>
-                <div className="text-sm">Tiempo Respuesta</div>
+              <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-white drop-shadow-lg">2h</div>
+                <div className="text-sm text-white drop-shadow-lg">Tiempo Respuesta</div>
               </div>
-              <div className="bg-white bg-opacity-20 rounded-lg p-4">
-                <div className="text-2xl font-bold">1000+</div>
-                <div className="text-sm">Equipos Atendidos</div>
+              <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-white drop-shadow-lg">1000+</div>
+                <div className="text-sm text-white drop-shadow-lg">Equipos Atendidos</div>
               </div>
             </div>
           </motion.div>
@@ -168,8 +168,9 @@ export default function Mantenimiento() {
         {/* Tipos de Mantenimiento */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
           className="mb-16"
         >
           <h2 className="text-3xl font-bold text-[#004A8F] mb-12 text-center">

@@ -102,6 +102,24 @@ export default function DisenoFabricacion() {
             <p className="text-xl text-gray-200 mb-8">
               Soluciones personalizadas en acero inoxidable desde el concepto hasta la entrega
             </p>
+            <div className="grid md:grid-cols-4 gap-4 text-center mb-8">
+              <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-white drop-shadow-lg">300+</div>
+                <div className="text-sm text-white drop-shadow-lg">Proyectos</div>
+              </div>
+              <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-white drop-shadow-lg">15+</div>
+                <div className="text-sm text-white drop-shadow-lg">Ingenieros</div>
+              </div>
+              <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-white drop-shadow-lg">99%</div>
+                <div className="text-sm text-white drop-shadow-lg">Precisión</div>
+              </div>
+              <div className="bg-[#004A8F] bg-opacity-30 rounded-lg p-4 border border-white border-opacity-50 backdrop-blur-sm">
+                <div className="text-2xl font-bold text-white drop-shadow-lg">ISO</div>
+                <div className="text-sm text-white drop-shadow-lg">Certificación</div>
+              </div>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-[#004A8F] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                 Solicitar Cotización
